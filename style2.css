@@ -1,0 +1,130 @@
+html,
+body{
+
+    position: relative;
+    height: 100%;
+}
+
+body{
+
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(168,61,62,0.8092029047947304) 100%, rgba(154,29,31,1) 100%);
+    font-family: Helvetica Neue, Helvetica;
+    font-size: 0.87rem;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.gobackfather{
+
+display: flex;
+padding: 13px 55px;
+
+}
+
+.goback{
+
+display: inline-block;
+padding: 13px 55px;
+border: 1px solid white;
+border-radius: 25px;
+color: rgb(95, 32, 36);
+text-decoration: none;
+
+}
+
+
+.swiper{
+
+    width: 100%;
+    padding: 150px 0 50px 0;
+
+}
+
+.swiper-slide{
+
+    width: 300px;
+    height: 500px;
+    background-color: rgb(131, 42, 48);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+}
+
+.icons{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 40px;
+}
+
+.icons i{
+    font-size: 1.25rem;
+    color: rgb(95, 32, 36);
+
+}
+
+.icons img{
+
+    width: 120px;
+}
+
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-txt{
+    flex-basis: 50%;
+    text-align: left;
+
+}
+
+.product-txt span{
+
+    font-size: 25px;
+    color: rgb(95, 32, 36);
+    font-weight: bold;
+}
+
+.product-txt h3{
+
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.product-txt p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.product-img{
+    flex-basis: 50%;
+    text-align: right;
+}
+
+.product-img img{
+    width: 120px;
+    background-color: white;
+
+}
+
+.btn-1{
+
+display: inline-block;
+padding: 13px 55px;
+border-radius: 25px;
+color: rgb(236, 121, 124);
+text-decoration: none;
+margin-top: 50px;
+border: 1px solid white
+;
+}
+
+
+
+
