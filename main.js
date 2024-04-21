@@ -1,47 +1,45 @@
-import products from './data.js';
+import { cargarInformacion } from './utils.js';
 
-document.addEventListener("DOMContentLoaded", function() {
-    const productContainer = document.getElementById("product-container");
-    const cartCounter = document.getElementById("cart-counter");
-    let products = [];
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const productos = await cargarInformacion();
+        const productosContainer = document.getElementById('product-container');
+        const cartCounter = document.getElementById('cart-counter');
+        let contadorProductos = 0;
 
-    fetch("https://api.escuelajs.co/api/v1/products")
-        .then(response => response.json())
-        .then(data => {
-            products = data;
-            renderProducts();
+        productos.forEach(producto => {
+            const productoCard = document.createElement('div');
+            productoCard.classList.add('caja1');
+
+            const imagen = new Image();
+            imagen.src = producto.image;
+            imagen.alt = producto.name;
+
+            const botonAgregar = document.createElement('button');
+            botonAgregar.textContent = 'Agregar al Carrito';
+            botonAgregar.classList.add('agregar-carrito'); // Agregar clase para identificar los botones
+
+            botonAgregar.addEventListener('click', () => {
+                contadorProductos++;
+                cartCounter.textContent = `Productos en el carrito: ${contadorProductos}`;
+            });
+
+            const cajaImg = document.createElement('div');
+            cajaImg.classList.add('caja-img');
+            cajaImg.appendChild(imagen);
+
+            productoCard.appendChild(cajaImg);
+            productoCard.appendChild(botonAgregar);
+
+            productosContainer.appendChild(productoCard);
         });
-
-    function renderProducts() {
-        productContainer.innerHTML = ""; // Limpiar el contenedor antes de renderizar los productos
-
-        products.forEach(product => {
-            const productCard = document.createElement("div");
-            productCard.classList.add("caja1");
-
-            const productImage = document.createElement("div");
-            productImage.classList.add("caja-img");
-            const img = document.createElement("img");
-            img.src = product.image;
-            img.alt = product.name;
-            productImage.appendChild(img);
-
-            const productButton = document.createElement("a");
-            productButton.href = "#"; // Enlace temporal
-            productButton.classList.add("botonimagen1");
-            productButton.textContent = "OBTENLO";
-            productButton.addEventListener("click", addToCart);
-
-            productCard.appendChild(productImage);
-            productCard.appendChild(productButton);
-            productContainer.appendChild(productCard);
-        });
-    }
-
-    let cartCount = 0;
-
-    function addToCart() {
-        cartCount++;
-        cartCounter.textContent = cartCount;
+    } catch (error) {
+        console.error('Error al cargar la información:', error);
     }
 });
+
+export const cargarInformacion = async () => {
+    const response = await fetch("data.json");
+    const data = await response.json();
+    return data;
+};

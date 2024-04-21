@@ -43,6 +43,7 @@
             que representan lo mejor de cada región vinícola del mundo. Desde los clásicos Bordeaux y Borgoña 
             hasta los vinos emergentes de Argentina, Chile o Nueva Zelanda, te ofrecemos una amplia variedad 
             de opciones para que encuentres el vino perfecto para cada ocasión.</p>
+            <div id="product-container"></div>
         <div class="coleccion">
 
             <div class="caja1">
@@ -51,7 +52,9 @@
                     <img src="150403.webp" alt="imagen">
                 </div>
                 <a href="index2.html" class="botonimagen1">OBTENLO</a>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
+            
 
             <div class="caja1">
 
@@ -59,6 +62,7 @@
                     <img src="324003.webp" alt="imagen">
                 </div>
                 <a href="index2.html" class="botonimagen1">OBTENLO</a>
+                <button class="agregar-carrito">Agregar al Carrito</button>
             </div>
 
             <div class="caja1">
@@ -67,6 +71,7 @@
                     <img src="MASICostaseraAmarone1000x1000.png" alt="imagen">
                 </div>
                 <a href="index2.html" class="botonimagen1">OBTENLO</a>
+               
             </div>
 
             <div class="caja1">
@@ -79,17 +84,22 @@
 
             </div>
 
-            <div id="product-container" class="coleccion"></div>
-            <div id="cart-counter" class="cart-counter">Agregados al carrito 0</div>
-
-
+            <section class="botones-agregar">
+                <div class="coleccion">
+                    <button class="agregar-carrito">Agregar al Carrito</button>
+                    <button class="agregar-carrito">Agregar al Carrito</button>
+                    <button class="agregar-carrito">Agregar al Carrito</button>
+                    <button class="agregar-carrito">Agregar al Carrito</button>
+                </div>
+            </section>
         
     </section>
     <footer class="finall">
-        <p clas="pie">Siempre brindando calidad y dandole satisfaciendo tu buen gusto.</p>
-        <script src="data.js" ></script>
-        <script type="module" src="main.js"></script>
+        <p>Productos en el carrito: <span id="cart-counter">0</span></p>
+      
     </footer>
+    <script src="main.js" type="module"></script>
     
+
 </body>
 </html>

@@ -145,8 +145,8 @@ text-decoration: none;
 }
 
 .articulillos{
-    width: 80%;
-    height: 100vh;
+    width: 63.7rem;
+    height: 50rem;
     background-color: rgb(131, 42, 48);
     display: flex;
     flex-direction: column;
@@ -239,3 +239,27 @@ height: 100%;
     font-size: 1rem;
   
 }
+
+
+.botones-agregar {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.agregar-carrito {
+    background-color: rgb(95, 32, 36);
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.agregar-carrito:hover {
+    background-color: rgb(131, 42, 48);
+}
+
+

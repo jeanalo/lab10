@@ -1,33 +1,33 @@
 
 
-const products = [
+ [
     {
       "id": 1,
       "name": "Sibaris",
       "price": 500000,
       "description": "Esta línea de vinos ofrece una selección de varietales clásicos como Cabernet Sauvignon, Merlot, Chardonnay y Sauvignon Blanc. Son vinos con un buen cuerpo, taninos maduros y aromas a frutos negros, especias y chocolate. Ideales para maridar con carnes rojas, pastas y quesos.",
-      "image": "https://github.com/jeanalo/Laboratorio5/blob/94b69082cc73aaa375d0d5b2574fabd93b126947/150403.webp",
+      "image": "https://github.com/jeanalo/Laboratorio5/blob/94b69082cc73aaa375d0d5b2574fabd93b126947/150403.webp"
     },
     {
       "id": 2,
       "name": "Fonteruteli",
       "price": 300000,
       "description": "Es un vino tinto italiano DOCG elaborado con uvas Sangiovese de la región de Chianti en la Toscana. Este vino es conocido por su elegancia, complejidad y su fiel representación del terroir toscano, su sabor es seco con cuerpo medio con buena acidez.",
-      "image": "https://github.com/jeanalo/Laboratorio5/blob/94b69082cc73aaa375d0d5b2574fabd93b126947/324003.webp",
+      "image": "https://github.com/jeanalo/Laboratorio5/blob/94b69082cc73aaa375d0d5b2574fabd93b126947/324003.webp"
     },
     {
       "id": 3,
       "name": "Masi Costera",
       "price": 700000,
       "description": "Es un vino tinto italiano DOCG elaborado con uvas Corvina, Rondinella y Molinara de la región del Véneto en el norte de Italia. Este vino es conocido por su intensidad, complejidad y su larga guarda, sabor seco aroma a frutos secos como pasas e higos e ideal para carnes.",
-      "image": "https://github.com/jeanalo/Laboratorio5/blob/94b69082cc73aaa375d0d5b2574fabd93b126947/MASICostaseraAmarone1000x1000.png",
+      "image": "https://github.com/jeanalo/Laboratorio5/blob/94b69082cc73aaa375d0d5b2574fabd93b126947/MASICostaseraAmarone1000x1000.png"
     },
     {
       "id": 4,
       "name": "Masi Levarie",
       "price": 200000,
       "description": "Es un vino blanco italiano DOC elaborado con uvas Garganega y Trebbiano de la región de Soave en el Véneto, al noreste de Italia. Se caracteriza por su estilo moderno, su frescura, su delicadeza y su gran capacidad para acompañar diversos platos, su aroma es intenso y fresco con aromas dominantes a pera madura, su saboro es fresco y equilibrado.",
-      "image": "https://github.com/jeanalo/Laboratorio5/blob/94b69082cc73aaa375d0d5b2574fabd93b126947/MASILevarie1000x1000.png",
+      "image": "https://github.com/jeanalo/Laboratorio5/blob/94b69082cc73aaa375d0d5b2574fabd93b126947/MASILevarie1000x1000.png"
     }
-  ];
+  ]
 
